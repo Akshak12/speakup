@@ -29,6 +29,9 @@ Plus filler word count (um, uh, like, you know) and words per minute.
 
 ---
 
+## Live Demo
+https://speakup-app-1.vercel.app
+
 ## Tech Stack
 
 | Layer | Tech |
