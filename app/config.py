@@ -1,0 +1,14 @@
+﻿import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+class Settings:
+    NEWS_API_KEY: str = os.getenv("NEWS_API_KEY", "")
+    GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
+    OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
+    SUPABASE_URL: str = os.getenv("SUPABASE_URL", "")
+    SUPABASE_KEY: str = os.getenv("SUPABASE_KEY", "")
+    SUPABASE_SERVICE_ROLE_KEY: str = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "")
+
+settings = Settings()

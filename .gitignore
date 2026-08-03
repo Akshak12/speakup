@@ -1,0 +1,19 @@
+# Environment variables
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+*.egg-info/
+
+# Node
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db
