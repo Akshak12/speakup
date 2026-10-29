@@ -2,8 +2,8 @@
   - type: web
     name: speakup-api
     env: python
-    buildCommand: py -m pip install -r requirements.txt
-    startCommand: uvicorn app.main:app --host 0.0.0.0 --port 
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: NEWS_API_KEY
         sync: false
@@ -12,4 +12,6 @@
       - key: SUPABASE_URL
         sync: false
       - key: SUPABASE_KEY
+        sync: false
+      - key: OPENAI_API_KEY
         sync: false
