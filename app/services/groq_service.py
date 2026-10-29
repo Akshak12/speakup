@@ -55,7 +55,7 @@ Return ONLY a valid JSON object with a "topics" array containing exactly 3 objec
 }}"""
 
     client = get_client()
-    models_to_try = ["llama3-8b-8192", "llama-3.1-8b-instant"]
+    models_to_try = ["openai/gpt-oss-20b"]
     completion = None
     last_err = None
 
@@ -133,7 +133,7 @@ Return ONLY a valid JSON object with the following exact keys:
 }}"""
 
     client = get_client()
-    models_to_try = ["llama3-8b-8192", "llama-3.1-8b-instant"]
+    models_to_try = ["openai/gpt-oss-20b"]
     completion = None
     last_err = None
 

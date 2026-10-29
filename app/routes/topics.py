@@ -50,7 +50,7 @@ async def fetch_headlines() -> list[str]:
 @router.get("/topics", response_model=TopicsResponse, summary="Get 3 speakable topics based on difficulty")
 async def get_topics(difficulty: str = Query("medium", description="Difficulty level: easy, medium, hard")):
     """
-    Fetches the 10 latest news headlines, sends them to Groq AI (llama3-8b-8192),
+    Fetches the 10 latest news headlines, sends them to Groq AI (GPT-OSS 20B),
     and returns 3 curated speakable topics with context filtered by difficulty.
     """
     headlines = await fetch_headlines()
